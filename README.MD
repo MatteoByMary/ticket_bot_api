@@ -2,7 +2,7 @@
 
 API FastAPI pour l'analyse automatique et le suivi des tickets de support client.
 
-## 🚀 Fonctionnalités
+##  Fonctionnalités
 
 - **Analyse automatique** : Génère des tickets structurés à partir de messages clients
 - **Questions de suivi** : Propose des questions intelligentes pour compléter les informations
@@ -10,7 +10,7 @@ API FastAPI pour l'analyse automatique et le suivi des tickets de support client
 - **API REST** : Endpoints simples et documentés
 - **Docker Ready** : Déploiement containerisé
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 .
@@ -28,7 +28,7 @@ API FastAPI pour l'analyse automatique et le suivi des tickets de support client
 └── README.md               # Ce fichier
 ```
 
-## 🛠️ Installation
+##  Installation
 
 ### Option 1: Installation locale
 
@@ -67,7 +67,7 @@ docker-compose logs -f
 docker-compose down
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 Variables d'environnement importantes :
 
@@ -78,7 +78,7 @@ Variables d'environnement importantes :
 | `OLLAMA_MODEL_NAME` | `mistral:instruct` | Modèle Ollama à utiliser |
 | `CORS_ORIGINS` | `http://localhost:5173` | Origines CORS autorisées |
 
-## 📚 API Endpoints
+##  API Endpoints
 
 ### `POST /analyze`
 Analyse un message client et génère un ticket structuré.
@@ -118,7 +118,7 @@ Génère une question de suivi pour compléter un ticket.
 ### `GET /health`
 Vérification de l'état du service.
 
-## 🧪 Tests
+##  Tests
 
 ```bash
 # Test de l'API
@@ -130,7 +130,7 @@ curl -X POST "http://localhost:8000/analyze" \
 curl http://localhost:8000/health
 ```
 
-## 🐳 Docker
+##  Docker
 
 ### Build manuel
 ```bash
@@ -150,34 +150,34 @@ docker exec ollama ollama pull mistral:instruct
 docker run -p 8000:8000 --link ollama support-ticket-ai
 ```
 
-## 🔍 Monitoring
+##  Monitoring
 
 - **Logs** : Les logs sont centralisés avec le module `logging`
 - **Health Check** : Endpoint `/health` pour les probes
 - **Métriques** : Codes de retour HTTP standardisés
 
-## 🚨 Gestion d'erreurs
+##  Gestion d'erreurs
 
 L'API gère proprement :
-- ✅ Timeouts des services IA
-- ✅ Erreurs de connexion
-- ✅ Validation des données
-- ✅ Messages d'erreur explicites
+-  Timeouts des services IA
+-  Erreurs de connexion
+-  Validation des données
+-  Messages d'erreur explicites
 
-## 🔒 Sécurité
+##  Sécurité
 
 - **CORS** : Configuration sécurisée
 - **Validation** : Tous les inputs sont validés
 - **Timeouts** : Protection contre les appels longs
 - **Logs** : Audit trail complet
 
-## 📈 Performance
+##  Performance
 
 - **Timeout** : 30s max pour les appels IA
 - **Async** : Toutes les opérations sont asynchrones
 - **Cache** : Prêt pour l'ajout de cache Redis
 
-## 🛣️ Roadmap
+##  Roadmap
 
 - [ ] Cache Redis pour les réponses
 - [ ] Rate limiting
@@ -186,7 +186,7 @@ L'API gère proprement :
 - [ ] Tests unitaires
 - [ ] CI/CD Pipeline
 
-## 🤝 Contribution
+##  Contribution
 
 1. Fork le projet
 2. Crée une branche (`git checkout -b feature/amazing-feature`)
@@ -198,8 +198,7 @@ L'API gère proprement :
 
 Ce projet est sous licence MIT. Voir `LICENSE` pour plus de détails.
 
-## 🆘 Support
+##  Support
 
 - **Documentation API** : http://localhost:8000/docs (Swagger)
 - **Issues** : Utilise les GitHub Issues
-- **Wiki** : Voir le wiki du projet
