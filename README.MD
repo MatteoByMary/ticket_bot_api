@@ -158,7 +158,7 @@ docker run -p 8000:8000 --link ollama support-ticket-ai
 
 ##  Gestion d'erreurs
 
-L'API gère proprement :
+L'API gère :
 -  Timeouts des services IA
 -  Erreurs de connexion
 -  Validation des données
@@ -177,15 +177,6 @@ L'API gère proprement :
 - **Async** : Toutes les opérations sont asynchrones
 - **Cache** : Prêt pour l'ajout de cache Redis
 
-##  Roadmap
-
-- [ ] Cache Redis pour les réponses
-- [ ] Rate limiting
-- [ ] Authentification JWT
-- [ ] Métriques Prometheus
-- [ ] Tests unitaires
-- [ ] CI/CD Pipeline
-
 ##  Contribution
 
 1. Fork le projet
@@ -196,9 +187,8 @@ L'API gère proprement :
 
 ## 📄 License
 
-Ce projet est sous licence MIT. Voir `LICENSE` pour plus de détails.
+Ce projet est sous `LICENSE`.
 
 ##  Support
 
 - **Documentation API** : http://localhost:8000/docs (Swagger)
-- **Issues** : Utilise les GitHub Issues
