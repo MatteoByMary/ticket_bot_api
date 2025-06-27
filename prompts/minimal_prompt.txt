@@ -1,0 +1,10 @@
+Crée un ticket JSON avec les informations que tu peux remplir, Remplace les manquants par [INCONNU].
+Format de sortie attendu :
+{
+  "Title" : "[titre]",
+  "Category" : "[BUG, DEMANDE, INCIDENT, QUESTION, AUTRE]",
+  "Priority" : "[CRITIQUE, HAUTE, MOYENNE, BASSE]",
+  "Localisation" : "[lieu exact ou INCONNU]",
+  "Description" : "[description fidèle à l'entrée]",
+  "Frustration" : [1, 2, 3, 4, 5]
+}
